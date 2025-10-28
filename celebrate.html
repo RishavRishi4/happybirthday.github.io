@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" type="text/css" href="celebrate.css">
+</head>
+<body>
+    <div class="celebration-container">
+        <h1 class="birthday-title">🎉 Happy Birthday! 🎂</h1>
+        
+        <img id="userPhoto" class="user-photo" src="" alt="Birthday Person">
+        
+        <div class="user-info">
+            <p id="userName"></p>
+        </div>
+        
+        <div class="age-display">
+            <p id="userAge"></p>
+        </div>
+        
+        <div class="music-control">
+            <button class="music-btn" id="musicToggle">🎵 Play Birthday Song</button>
+        </div>
+    </div>
+    
+    <!-- Balloons -->
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    
+    <audio id="birthdaySong" loop>
+        <source src="birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="celebrate.js"></script>
+</body>
+</html>

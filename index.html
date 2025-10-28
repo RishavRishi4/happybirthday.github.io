@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Birthday Celebration 🎉</h1>
+        <form id="birthdayForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <div class="form-group camera-section">
+                <label>Take Your Photo:</label>
+                <video id="video" autoplay></video>
+                <canvas id="canvas"></canvas>
+                <img id="capturedImage" style="display:none;">
+                <button type="button" id="startCamera" class="camera-btn">Start Camera</button>
+                <button type="button" id="captureBtn" class="camera-btn" style="display:none;">Capture Photo</button>
+                <button type="button" id="retakeBtn" class="camera-btn" style="display:none;">Retake Photo</button>
+            </div>
+            
+            <button type="submit" id="submitBtn" disabled>Submit & Celebrate! 🎊</button>
+            <p class="error" id="errorMsg"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
